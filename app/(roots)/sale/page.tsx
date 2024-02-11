@@ -11,7 +11,7 @@ export const revalidate = 0;
 
 interface SalesProps {
   product?: Product[];
-  showDiscount?:boolean,
+  //showDiscount?:boolean,
 }
 
 function getMultipleRandom<T>(arr: T[], num: number): T[] {

@@ -20,7 +20,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
 
         <Tab.List className="grid grid-cols-4 gap-6">
           {images.map((image) => {
-            return <GalleryTab key={image.id} image={image} />;
+            return <GalleryTab key={image.id} image={image} />
           })}
         </Tab.List>
       </div>
