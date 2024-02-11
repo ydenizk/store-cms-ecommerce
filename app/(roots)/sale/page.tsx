@@ -9,8 +9,8 @@ import getAllProducts from "@/actions/getAllProducts";
 
 export const revalidate = 0;
 
-interface salesProps {
-  product: Product[];
+interface SalesProps {
+  product?: Product[];
   showDiscount?:boolean,
 }
 
@@ -19,7 +19,7 @@ function getMultipleRandom<T>(arr: T[], num: number): T[] {
   return shuffled.slice(0, num);
 }
 
-const SalePage: React.FC<salesProps> = async () => {
+const SalePage: React.FC<SalesProps> = async () => {
   const allproducts = await getAllProducts();
 
   const products = getMultipleRandom(allproducts, 4);
