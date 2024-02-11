@@ -55,11 +55,7 @@ const NavSmall: React.FC<NavSmallProps> = ({ categories }) => {
         <ul className="flex flex-col gap-2 text-lg   ">
           <li>
             <h1 className="uppercase  border-b text-gray-900 font-semibold text-base border-gray-300">
-<<<<<<< HEAD
-       Categories
-=======
-              Woman
->>>>>>> origin/main
+              Categories
             </h1>
           </li>
 

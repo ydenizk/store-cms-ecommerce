@@ -57,11 +57,9 @@ const FeaturedProList: React.FC<ProfuctListProps> = ({ title, items }) => {
           style={{ width: "240vw" }}
         >
           {items.map((item) => {
-<<<<<<< HEAD
+
             return <ProductCard key={item.id} data={item} showNew={true} showDiscount={false} />;
-=======
-            return <ProductCard key={item.id} data={item} />;
->>>>>>> origin/main
+
           })}
         </div>
       </div>
@@ -70,21 +68,3 @@ const FeaturedProList: React.FC<ProfuctListProps> = ({ title, items }) => {
 };
 
 export default FeaturedProList;
-<<<<<<< HEAD
-=======
-
-{
-  /*     {images.map((n) => {
-          return (
-            <div key={n.id} className="h-72 w-48 flex justify-center items-center   relative">
-              <Image
-                src={n.link}
-                alt="pic"
-                fill
-                className="object-cover absolute rounded-md"
-              />
-            </div>
-          );
-        })} */
-}
->>>>>>> origin/main

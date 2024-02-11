@@ -5,16 +5,12 @@ import { Product } from "@/app/types";
 import { NoResults } from "./no-results";
 import ProductCard from "../productCard";
 
-
 interface ProductListProps {
   title: string;
   items: Product[];
-<<<<<<< HEAD
-  showNew?: boolean;
-  showDiscount?:boolean
 
-=======
->>>>>>> origin/main
+  showNew?: boolean;
+  showDiscount?: boolean;
 }
 
 const ProductList: React.FC<ProductListProps> = ({ title, items }) => {
@@ -23,15 +19,16 @@ const ProductList: React.FC<ProductListProps> = ({ title, items }) => {
       <div className="mx-8">
         <h3 className="font-bold text-3xl my-4"> {title} </h3>
         {items.length === 0 && <NoResults />}
-        <div
-          className="grid grid-cols-2 md:grid-cols-3 sm:grid-cols-2 gap-8"
-        >
+        <div className="grid grid-cols-2 md:grid-cols-3 sm:grid-cols-2 gap-8">
           {items.map((item) => {
-<<<<<<< HEAD
-            return <ProductCard key={item.id} data={item} showNew={false} showDiscount={false} />;
-=======
-            return <ProductCard key={item.id} data={item} />;
->>>>>>> origin/main
+            return (
+              <ProductCard
+                key={item.id}
+                data={item}
+                showNew={false}
+                showDiscount={false}
+              />
+            );
           })}
         </div>
       </div>
@@ -39,4 +36,4 @@ const ProductList: React.FC<ProductListProps> = ({ title, items }) => {
   );
 };
 
-export default ProductList
+export default ProductList;

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import { Size } from "@/app/types";
 import qs from "query-string";
 const URL = `${process.env.NEXT_PUBLIC_API_URL}/sizes`;
@@ -21,17 +21,4 @@ const getSizes = async (query: Query): Promise<Size[]> => {
 };
 
 export default getSizes;
-=======
- import { Size} from "@/app/types";
- const URL=`${process.env.NEXT_PUBLIC_API_URL}/sizes`
 
-
- const getSizes=async():Promise<Size[]>=>{
-
-    const res=await fetch(URL)
-
-    return res.json()
- }
-
- export default getSizes   
->>>>>>> origin/main

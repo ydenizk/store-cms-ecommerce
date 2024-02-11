@@ -22,8 +22,6 @@ interface NavLinksProps {
 }
 
 const NavLinks: React.FC<NavLinksProps> = ({ categories }) => {
-
-
   return (
     <NavigationMenu className="hidden sm:block">
       <NavigationMenuList className="">
@@ -61,23 +59,14 @@ const NavLinks: React.FC<NavLinksProps> = ({ categories }) => {
           </NavigationMenuContent>
         </NavigationMenuItem>
  */}
-     
 
         <NavigationMenuItem className="hidden sm:block">
           <NavigationMenuTrigger className="uppercase">
-<<<<<<< HEAD
             Everything for camping
           </NavigationMenuTrigger>
           <NavigationMenuContent className="border-none ">
             <div className="grid grid-cols-2 gap-6 p-4 sm:w-[440px] md:w-[540px] h-[360px]  ">
               <div className="relative sm:w-[210px] md:w-[240px] h-[320px]">
-=======
-            Everything for woman
-          </NavigationMenuTrigger>
-          <NavigationMenuContent className="border-none">
-            <div className="grid grid-cols-2 gap-6 p-4 w-[560px] h-[400px]   ">
-              <div className="relative w-[240px] h-[360px]">
->>>>>>> origin/main
                 <Image
                   src="/4.jpg"
                   alt="pic"
@@ -89,11 +78,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ categories }) => {
                 {categories?.map((category) => {
                   return (
                     <ListItem
-<<<<<<< HEAD
-                    className="uppercase hover:opacity-80 transition duration-300"
-=======
-                    className="uppercase "
->>>>>>> origin/main
+                      className="uppercase hover:opacity-80 transition duration-300"
                       key={category.id}
                       href={`/category/${category.id}`}
                       title={category.name}
@@ -105,11 +90,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ categories }) => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-<<<<<<< HEAD
           <Link href="/sale" legacyBehavior passHref>
-=======
-          <Link href="/docs" legacyBehavior passHref>
->>>>>>> origin/main
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               SALE
             </NavigationMenuLink>
