@@ -24,8 +24,13 @@ const CartItem: React.FC<CartItemProps> = ({ data }) => {
   };
 
   return (
+<<<<<<< HEAD
     <li className="flex py-4  md:py-6 border-b">
       <div className="relative  rounded overflow-hidden w-36 h-36 md:w-48 md:h-48">
+=======
+    <li className="flex py-6 border-b">
+      <div className="relative h-48 rounded overflow-hidden w-48 ">
+>>>>>>> origin/main
         <Image
           src={data.images[0].url}
           fill
@@ -35,6 +40,7 @@ const CartItem: React.FC<CartItemProps> = ({ data }) => {
       </div>
 
       <div className="relative ml-4 flex flex-1 flex-col justify-between  ">
+<<<<<<< HEAD
         <div className="absolute z-10 right-0 top-1">
           <button onClick={onRemove}>
          
@@ -45,14 +51,33 @@ const CartItem: React.FC<CartItemProps> = ({ data }) => {
           <div className="flex justify-between">
             <p className="md:text-lg font-semibold text-black capitalize">
         
+=======
+        <div className="absolute z-10 right-0 top-0">
+          <button onClick={onRemove}>
+         
+            <X />{" "}
+          </button>
+        </div>
+        <div className="relative pr-9  grid grid-cols-2 gap-x-6">
+          <div className="flex justify-between">
+            <p className="text-lg font-semibold text-black capitalize">
+              {" "}
+>>>>>>> origin/main
               {data.name}{" "}
             </p>
           </div>
 
+<<<<<<< HEAD
           <div className="mt-1 flex text-sm">
             <p className="text-gray-500 capitalize"> {data.color.name} </p>
             <p className="text-gray-500 ml-4 border-l pl-4 border-gray-200">
               {data.size.name}
+=======
+          <div className="mt-1 flex txt-sm">
+            <p className="text-gray-500 capitalize"> {data.color.name} </p>
+            <p className="text-gray-500 ml-4 border-l pl-4 border-gray-200">
+              {data.size.name}{" "}
+>>>>>>> origin/main
             </p>
           </div>
           <div className="font-semibold">
@@ -65,4 +90,7 @@ const CartItem: React.FC<CartItemProps> = ({ data }) => {
 };
 
 export default CartItem;
+<<<<<<< HEAD
  
+=======
+>>>>>>> origin/main

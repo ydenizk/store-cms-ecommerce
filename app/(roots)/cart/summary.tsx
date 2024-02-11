@@ -45,7 +45,11 @@ const Summary = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className="mt-4 md:col-span-4  rounded bg-gray-100 px-4 p-6  h-full max-w-6xl">
+=======
+    <div className="mt-4 col-span-4  rounded bg-gray-100 px-4 p-6  h-full max-w-6xl">
+>>>>>>> origin/main
       <div className="flex justify-start items-center gap-x-2">
         <h2 className="text-lg  font-semibold ">Order Summary </h2>
         <p className="text-gray-500">({items.length} items)</p>
@@ -72,10 +76,16 @@ const Summary = () => {
         </div>
       </div>
       <button
+<<<<<<< HEAD
         disabled={items.length === 0}
         onClick={onCheckout}
         className="w-full mt-12 p-2 bg-[#88AB8E] text-gray-900 rounded cursor-pointer text-lg hover:opacity-90 
         transition duration-500 disabled:opacity-60"
+=======
+        onClick={onCheckout}
+        className="w-full mt-12 p-2 bg-[#88AB8E] text-gray-900 rounded cursor-pointer text-lg hover:opacity-90 
+        transition duration-500"
+>>>>>>> origin/main
       >
         Checkout
       </button>

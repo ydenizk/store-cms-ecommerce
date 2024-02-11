@@ -9,7 +9,10 @@ interface Query {
   categoryId?: string;
   colorId?: string;
   sizeId?: string;
+<<<<<<< HEAD
   brandId?:string,
+=======
+>>>>>>> origin/main
   isFeatured?: boolean;
 }
 
@@ -19,7 +22,10 @@ const getProducts = async (query: Query): Promise<Product[]> => {
     query: {
       colorId: query.colorId,
       sizeId: query.sizeId,
+<<<<<<< HEAD
       brandId:query.brandId,
+=======
+>>>>>>> origin/main
       categoryId: query.categoryId,
       isFeatured: query.isFeatured,
       

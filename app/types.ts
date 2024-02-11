@@ -7,7 +7,10 @@ export interface Billboard {
     id: string;
     name: string;
     billboard: Billboard;
+<<<<<<< HEAD
     products:Product[]
+=======
+>>>>>>> origin/main
   }
   export interface Gender {
     id: string;
@@ -20,6 +23,7 @@ export interface Billboard {
     category: Category;
     name: string;
     price: string;
+<<<<<<< HEAD
     discountedPrice:string,
     description:string;
     isFeatured: boolean;
@@ -29,6 +33,12 @@ export interface Billboard {
     colorId:string
     color: Color;
     brand:Brand;
+=======
+    isFeatured: boolean;
+    genderName:string
+    size: Size;
+    color: Color;
+>>>>>>> origin/main
     images: Image[];
   }
   
@@ -39,7 +49,10 @@ export interface Billboard {
   export interface Size {
     id: string;
     name: string;
+<<<<<<< HEAD
     category:Category;
+=======
+>>>>>>> origin/main
     value: string;
   }
   export interface Color {
@@ -47,9 +60,12 @@ export interface Billboard {
     name: string;
     value: string;
   }
+<<<<<<< HEAD
   export interface Brand  {
     id: string;
     name: string;
 
   }
+=======
+>>>>>>> origin/main
   

@@ -11,8 +11,11 @@ import useCart from "@/zustand-store/use-cart";
 
 interface ProductCard {
   data: Product;
+<<<<<<< HEAD
   showNew?: boolean;
   showDiscount?: boolean;
+=======
+>>>>>>> origin/main
   onClick?: MouseEventHandler<HTMLButtonElement> | undefined;
 }
 
@@ -21,11 +24,15 @@ export const formatter = new Intl.NumberFormat("en-US", {
   currency: "USD",
 });
 
+<<<<<<< HEAD
 const ProductCard: React.FC<ProductCard> = ({
   data,
   showNew,
   showDiscount,
 }) => {
+=======
+const ProductCard: React.FC<ProductCard> = ({ data }) => {
+>>>>>>> origin/main
   const router = useRouter();
   const previeww = usePreviewModal();
   const cart = useCart();
@@ -50,6 +57,7 @@ const ProductCard: React.FC<ProductCard> = ({
   return (
     <div
       onClick={handleClick}
+<<<<<<< HEAD
       className=" group cursor-pointer bg-neutral-100 relative h-auto rounded  w-full max-w-80  p-8  "
     >
       {showNew && (
@@ -62,6 +70,12 @@ uppercase text-sm top-5 left-5"
       )}
       {/* Images and actions  */}
       <div className="w-full h-80 rounded  relative ">
+=======
+      className=" group cursor-pointer  relative h-auto rounded  w-full  border-b "
+    >
+      {/* Images and actions  */}
+      <div className="w-full h-96 rounded  relative ">
+>>>>>>> origin/main
         <Image
           src={data?.images?.[0]?.url}
           fill
@@ -73,13 +87,21 @@ uppercase text-sm top-5 left-5"
           <div className="flex gap-x-6 justify-center">
             <button
               onClick={onPreview}
+<<<<<<< HEAD
               className="rounded-full flex items-center justify-center border bg-gray-200 shadow-md hover:scale-110 transition p-2 "
+=======
+              className="rounded-full flex items-center justify-center border bg-white shadow-md hover:scale-110 transition p-2 "
+>>>>>>> origin/main
             >
               <Expand size={20} className="text-gray-600" />
             </button>
             <button
               onClick={onAddtoCart}
+<<<<<<< HEAD
               className="rounded-full flex items-center justify-center border bg-gray-200 shadow-md hover:scale-110 transition p-2 "
+=======
+              className="rounded-full flex items-center justify-center border bg-white shadow-md hover:scale-110 transition p-2 "
+>>>>>>> origin/main
             >
               <ShoppingCart size={20} className="text-gray-600" />
             </button>
@@ -87,12 +109,17 @@ uppercase text-sm top-5 left-5"
         </div>
       </div>
       {/* DESCRIPTION........ */}
+<<<<<<< HEAD
       <div className="my-2 mt-8 px-1">
+=======
+      <div className="my-2 px-1">
+>>>>>>> origin/main
         <p className="font-light text-lg ">{data.name} </p>
         <p className="text-gray-600 text-xs ">{data.category?.name} </p>
       </div>
       {/* price */}{" "}
       {/* eğer hydration problemı yaratırsa,currency die yarı bir component aç ve mounted trick i yap */}
+<<<<<<< HEAD
       <div className="flex items-center justify-between px-1">
         <div
           className={`h-5 w-5 rounded-full opacity-90 `}
@@ -111,6 +138,12 @@ uppercase text-sm top-5 left-5"
             {formatter.format(Number(data?.price))}
           </div>
         )}
+=======
+      <div className="flex items-center justify-end px-2">
+        <div className="font-semibold">
+          {formatter.format(Number(data?.price))}
+        </div>
+>>>>>>> origin/main
       </div>
     </div>
   );

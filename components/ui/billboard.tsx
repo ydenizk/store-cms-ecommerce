@@ -9,7 +9,11 @@ const Billboard: React.FC<BillboardProps> = ({ data }) => {
   return (
     <div className="p-4 rounded-md overflow-hidden">
       <div
+<<<<<<< HEAD
         className="rounded-md relative  overflow-hidden bg-cover bg-center h-96 max-h-96 w-full"
+=======
+        className="rounded-md relative  overflow-hidden bg-cover h-96 max-h-96 w-full"
+>>>>>>> origin/main
         style={{ backgroundImage: `url(${data.imageUrl})` }}
       >
         <div className="h-full w-full flex justify-end items-start p-8 opacity-90  ">

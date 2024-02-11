@@ -17,7 +17,11 @@ interface ModalProps {
         <div className="fixed inset-0 bg-black opacity-50"></div>
 
         <div className="fixed   inset-0 overflow-y-auto flex justify-center items-center">
+<<<<<<< HEAD
           <div className="flex  min-h-full w-96 sm:w-[640px] items-center justify-center p-4 text-center  ">
+=======
+          <div className="flex  min-h-full w-96 sm:w-[480px] items-center justify-center p-4 text-center  ">
+>>>>>>> origin/main
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"

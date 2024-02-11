@@ -20,6 +20,10 @@ export default async function Home() {
           <h1 className="text-lg md:text-2xl font-normal">
             Shipping cost free
           </h1>
+          <h1 className="text-lg md:text-2xl font-normal">
+            Shipping cost free
+          </h1>
+          origin/main
           <p className=" font-serif italic">
             Free delivery for over 200.0 Eur orders.
           </p>
@@ -28,6 +32,11 @@ export default async function Home() {
           <h1 className="text-lg md:text-2xl font-normal">
             Quality of Service
           </h1>
+
+          <h1 className="text-lg md:text-2xl font-normal">
+            Quality of Service
+          </h1>
+
           <p className=" font-serif italic">Easy returns and changes</p>
         </div>
       </div>
@@ -38,8 +47,8 @@ export default async function Home() {
 
       <div className="flex flex-col gap-8 items-center justify-center w-full max-w-4xl mx-auto my-12  text-center my">
         <div className=" w-full  border-t pt-8 font-light  text-black">
-          We believe the outdoors is there for everyone to enjoy. Whether you are
-          blazing a new trail or just want to add a little fresh-air time to
+          We believe the outdoors is there for everyone to enjoy. Whether you
+          are blazing a new trail or just want to add a little fresh-air time to
           your hectic schedule, the outside world is waiting for you. We make
           the gear that will get you there.Get the latest news and offers via
           our newsletter

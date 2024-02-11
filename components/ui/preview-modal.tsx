@@ -13,23 +13,47 @@ export const formatter = new Intl.NumberFormat("en-US", {
 
 function PreviewModal() {
   const { isOpen, onClose } = usePreviewModal();
+<<<<<<< HEAD
   const cart = useCart();
+=======
+  const cart=useCart()
+>>>>>>> origin/main
 
   const product = usePreviewModal((state) => state.data);
 
   if (!product) {
     return null;
   }
+<<<<<<< HEAD
   const onAddtoCart /* : MouseEventHandler<HTMLButtonElement> */ = () => {
     // event.stopPropagation();
 
     cart.addItem(product);
   };
+=======
+  const onAddtoCart/* : MouseEventHandler<HTMLButtonElement> */ = () => {
+    // event.stopPropagation();
+ 
+     cart.addItem(product);
+   };
+ 
+ 
+>>>>>>> origin/main
 
   return (
     <Modal open={isOpen} onClose={onClose}>
       <div className="flex w-full h-48 items-start gap-6  bg-gray-100">
+<<<<<<< HEAD
       
+=======
+        {/*    <div className="flex-1 w-full">
+          <Gallery images={product.images} />
+        </div>
+        <div className="flex-1">
+          <InfoSection data={product} />
+        </div>  */}
+
+>>>>>>> origin/main
         <div className="relative flex-1 w-full h-full -mt-2">
           <Image
             src={product.images[0].url}
@@ -41,6 +65,11 @@ function PreviewModal() {
 
         {/* ..... */}
         <div className="flex-1 -mt-2">
+<<<<<<< HEAD
+=======
+         
+
+>>>>>>> origin/main
           <h1 className="text-lg capitalize "> {product.name} </h1>
 
           <div className="mt-2 flex  justify-start items-center gap-x-2 ">
@@ -56,7 +85,13 @@ function PreviewModal() {
           <div className="flex items-center  gap-x-2">
             <h3 className="text-xs">Size: </h3>
 
+<<<<<<< HEAD
             <div className="py-1 ">{product?.size?.name}</div>
+=======
+            <div className="py-1 ">
+              {product?.size?.name}
+            </div>
+>>>>>>> origin/main
           </div>
           <div className="flex items-center gap-x-2 my-1">
             <h3 className="text-xs">Selected Color: </h3>
@@ -68,7 +103,11 @@ function PreviewModal() {
 
           <div className="mt-8 flex items-center justify-center gap-x-3 w-full">
             <button
+<<<<<<< HEAD
               onClick={onAddtoCart}
+=======
+            onClick={onAddtoCart}
+>>>>>>> origin/main
               className="flex items-center  justify-center gap-1  
         rounded bg-gray-300 p-1 transition duration-500 hover:bg-gray-400 w-full   whitespace-nowrap "
             >

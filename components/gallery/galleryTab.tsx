@@ -11,7 +11,11 @@ interface GalleryTabProps {
 const GalleryTab: React.FC<GalleryTabProps> = ({ image }) => {
   return (
     <Tab className="relative flex aspect-square cursor-pointer items-center justify-center 
+<<<<<<< HEAD
     rounded-md bg-white ">
+=======
+    rounded-md bg-white">
+>>>>>>> origin/main
       {({ selected }) => (
         <div>
           <span className="absolute h-full w-full aspect-square inset-0 overflow-hidden rounded-md">

@@ -13,6 +13,7 @@ const HeroSection = () => {
           </div>
 
           <div className="grid   md:grid-cols-2    gap-2 w-full  h-96 lg:h-[640px] md:h-[540px] ">
+<<<<<<< HEAD
             <div className="relative w-full h-full ">
               <Image
                 src="/01.jpg"
@@ -27,6 +28,23 @@ const HeroSection = () => {
                 alt="pic"
                 fill
                 className="absolute object-cover rounded-md "
+=======
+            <div className="relative w-full h-full opacity-95">
+              <Image
+                src="/8.jpg"
+                alt="pic"
+                fill
+                className="absolute object-cover object-top "
+              />
+            </div>
+
+            <div className="relative w-full h-full ">
+              <Image
+                src="/5.jpg"
+                alt="pic"
+                fill
+                className="absolute object-cover object-center "
+>>>>>>> origin/main
               />
             </div>
           </div>

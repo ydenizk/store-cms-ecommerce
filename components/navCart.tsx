@@ -43,7 +43,11 @@ const NavCart: React.FC<NavCartProps> = ({ products }) => {
         <input
           type="text"
           placeholder="Search "
+<<<<<<< HEAD
           className={`outline-none w-36 sm:w-auto  border-b text-sm h-8 border-gray-300  text-gray-600 ${
+=======
+          className={`outline-none  border-b text-sm h-8 border-gray-300  text-gray-600 ${
+>>>>>>> origin/main
             isSearchVisible ? "visible" : "hidden"
           }`}
           value={searchTerm}

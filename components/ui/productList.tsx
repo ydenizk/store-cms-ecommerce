@@ -9,9 +9,12 @@ import ProductCard from "../productCard";
 interface ProductListProps {
   title: string;
   items: Product[];
+<<<<<<< HEAD
   showNew?: boolean;
   showDiscount?:boolean
 
+=======
+>>>>>>> origin/main
 }
 
 const ProductList: React.FC<ProductListProps> = ({ title, items }) => {
@@ -24,7 +27,11 @@ const ProductList: React.FC<ProductListProps> = ({ title, items }) => {
           className="grid grid-cols-2 md:grid-cols-3 sm:grid-cols-2 gap-8"
         >
           {items.map((item) => {
+<<<<<<< HEAD
             return <ProductCard key={item.id} data={item} showNew={false} showDiscount={false} />;
+=======
+            return <ProductCard key={item.id} data={item} />;
+>>>>>>> origin/main
           })}
         </div>
       </div>

@@ -15,6 +15,7 @@ import {
 const images = [
   {
     id: 1,
+<<<<<<< HEAD
     link: "/2.jpg",
   },
   {
@@ -32,6 +33,25 @@ const images = [
   {
     id: 5,
     link: "/6.jpg",
+=======
+    link: "/1.jpg",
+  },
+  {
+    id: 2,
+    link: "/6.jpg",
+  },
+  {
+    id: 3,
+    link: "/3.jpg",
+  },
+  {
+    id: 4,
+    link: "/2.jpg",
+  },
+  {
+    id: 5,
+    link: "/4.jpg",
+>>>>>>> origin/main
   },
 
 ];
@@ -44,6 +64,7 @@ export function HeroCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
+<<<<<<< HEAD
       className="w-full relative"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
@@ -54,13 +75,28 @@ export function HeroCarousel() {
         {images.map((image, index) => (
           <CarouselItem key={index}>
             <div className="relative w-full h-80 lg:h-[640px] md:h-[540px] rounded-md">
+=======
+      className="w-full "
+      onMouseEnter={plugin.current.stop}
+      onMouseLeave={plugin.current.reset}
+    >
+      <CarouselContent>
+        {images.map((image, index) => (
+          <CarouselItem key={index}>
+            <div className="relative w-full h-80 lg:h-[640px] md:h-[540px]">
+>>>>>>> origin/main
               <Image
                 src={image.link}
                 alt="pic"
                 fill
+<<<<<<< HEAD
                 className="absolute object-cover object-center rounded-md"
               />
         
+=======
+                className="absolute object-cover object-center"
+              />
+>>>>>>> origin/main
             </div>
           </CarouselItem>
         ))}
