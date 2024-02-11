@@ -15,11 +15,9 @@ interface GalleryProps {
 const Gallery: React.FC<GalleryProps> = ({ images }) => {
   return (
     <Tab.Group as="div" className="flex flex-col-reverse ">
-<<<<<<< HEAD
+
       <div className="mx-auto mt-6 w-full max-w-2xl hidden sm:block ">
-=======
-      <div className="mx-auto mt-6 w-full max-w-2xl hidden sm:block">
->>>>>>> origin/main
+
         <Tab.List className="grid grid-cols-4 gap-6">
           {images.map((image) => {
             return <GalleryTab key={image.id} image={image} />;
