@@ -1,4 +1,4 @@
-"use client"
+/* "use client"
 
 import React from 'react'
 import Container from '@/components/ui/container';
@@ -50,4 +50,4 @@ const SalesClient:React.FC<SalesProps> = ({products=[]}) => {
   )
 }
 
-export default SalesClient
+export default SalesClient */
