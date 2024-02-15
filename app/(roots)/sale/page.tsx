@@ -2,7 +2,7 @@
 import React from "react";
 import { Product } from "@/app/types";
 import getAllProducts from "@/actions/getAllProducts";
-import SalesClient from "./salesClient";
+import SalesClient from "./salesClient";  
 
 export const revalidate = 0;
 
