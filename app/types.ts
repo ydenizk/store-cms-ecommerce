@@ -51,4 +51,5 @@ export interface Color {
 export interface Brand {
   id: string;
   name: string;
+  value: string;
 }
