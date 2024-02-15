@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowRight } from "lucide-react";
 import React, { useState, FormEvent, useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -55,8 +56,9 @@ export const Newsletter = () => {
             required
           />
         </div>
-        <button type="submit" className="border bg-black opacity-80 text-white p-[15px]">
+        <button type="submit" className="border bg-black opacity-80 text-white p-[11px] transition hover:opacity-95">
           {/* SVG icon for the button */}
+          <ArrowRight />
         </button>
       </form>
       {/* Display internal message if used */}
