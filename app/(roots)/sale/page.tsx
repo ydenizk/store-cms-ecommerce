@@ -7,7 +7,7 @@ import SalesClient from "./salesClient";
 export const revalidate = 0;
 
 interface SalesProps {
-  product?: Product[];
+  products?: Product[];
 
 }
 
