@@ -20,7 +20,6 @@ const SalesClient: React.FC<SalesProps> = async () => {
   const allproducts = await getAllProducts();
 
   const products = getMultipleRandom(allproducts, 4);
-console.log(products);
 
   return (
     <div className="bg-white p-4 w-full">
