@@ -16,7 +16,7 @@ function getMultipleRandom<T>(arr: T[], num: number): T[] {
   return shuffled.slice(0, num);
 }
 
-export const SalePage: React.FC<SalesProps> = async () => {
+const SalePage: React.FC<SalesProps> = async () => {
   const allproducts = await getAllProducts();
 
   const products = getMultipleRandom(allproducts, 4);
@@ -27,5 +27,8 @@ export const SalePage: React.FC<SalesProps> = async () => {
     </div>
   );
 };
+
+
+export default SalePage
 
 
